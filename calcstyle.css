@@ -1,0 +1,94 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{   
+    background-color: liner-gradient();
+    min-height: 90vh;
+    display: flex;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    justify-content: left;
+    align-items: left;
+    
+}
+.text-center{
+    top: 7px;
+    position: absolute;
+    visibility:visible;
+}
+@media(max-width: 500px){
+    .text-center{
+        visibility: hidden;
+    }
+}
+.CalcContainer{
+    background-color: #131313;
+    -webkit-text-fill-color: white;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    user-select: none;
+}
+#DisplayArea{
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px,auto));
+    word-wrap: break-word;
+    padding-bottom: 1px rgba(128,128,128,0.116) solid;
+}
+#DisplayArea .currentInput{
+    text-align: right;
+    height: 8vh;
+    color: white;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+}
+#DisplayArea .answerScreen{
+    text-align: right;
+    color: rgba(150,150,150, 0.87);
+    height: 7px;
+    line-height: 3;
+    font-size: larger;
+}
+.Keypad-butons{
+    display: grid;
+    grid: repeat(5,70px)/repeat(4,70px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.Keypad-butons button{
+    outline: none;
+    border: none;
+    border-radius: 122px;
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: x-large;
+}
+.Keypad-butons .fun_btn{
+    color: #000;
+    background: #00e6f6;
+    font-weight: bold;
+}
+.num_btn:hover{
+    background-color: #282a3a;
+}
+.fun_btn:hover{
+    background-color: #00c6f6;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-color: #131313;
+        align-items:flex-start;
+    }
+}

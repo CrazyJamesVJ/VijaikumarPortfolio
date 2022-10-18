@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  *:not(i) {
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-size: cover;
+    background: linear-gradient( rgba(236,236,236,1), rgba(102,99,101,0.9) rgb(0, 0, 0) 100%);
+  }
+  .container {
+    background-color: rgba(68, 68, 68, 0.367);
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+  }
+ 
+  .header{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: xx-large;
+  }
+  .search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search-box input {
+    padding: 2px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #2a2a2a6f;
+    font-size: 16px;
+    color: black;
+    font-size: large;
+    background-color: transparent;
+  }
+  .search-box button {
+    padding: 12px 0;
+    width: 25%;
+    background-color: #00000068;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  @media(max-width: 640px){
+    .container{
+      width: 330px;
+    }
+    .search-box button{
+      width: 1000px;
+    }
+    .search-box input{
+      width: 200px;
+      padding: 0%;
+    }
+  }
+  .result {
+    position: relative;
+  }
+  .result h4 {
+    font-size: 32px;
+    color: #000000;
+  }
+  .word {
+    margin-top: 30px;
+  }
+  .result button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+  .details {
+    padding-bottom: 10px;
+  }
+  .word-meaning {
+    border-left: 5px solid #ffffff;
+    color: #ffffff; 
+    background-color: #00000068;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .word-example {
+    color: #ffffff;
+    font-style: italic;
+    border-left: 5px solid #ffffff;
+    padding-left: 20px;
+    margin-top: 10px;
+    background-color: #00000068;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .error {
+    margin-top: 60px;
+    text-align: center;
+  }
