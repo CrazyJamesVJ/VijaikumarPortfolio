@@ -6,7 +6,7 @@ if ( username == "James" && password == "James"){
 window.location = "MainPage.html"; // Redirecting to other page.
 }
 else{
-document.getElementById("wrong-password").innerHTML=`<span class="wrong-password"> Invalid Username and Password </span>`;
+document.getElementById("wrong-password").innerHTML=`<span class="wrong-password"> Invalid Try Again </span>`;
 }
 }
 
